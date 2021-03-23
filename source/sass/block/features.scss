@@ -1,0 +1,23 @@
+.features__header {
+   font-size: 25px;
+   color: $green;
+   text-align: center;
+   line-height: 37px;
+   margin-bottom: 30px;
+}
+
+.features__text {
+   line-height: 27px;
+   text-align: justify;
+}
+
+@media (min-width: $desktop-width) {
+   .features__wrapper {
+      padding-left: 50px;
+      padding-right: 50px;
+   }
+
+   .features__header {
+      font-size: 30px;
+   }
+}

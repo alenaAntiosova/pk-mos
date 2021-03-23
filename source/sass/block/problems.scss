@@ -1,0 +1,30 @@
+.main-screen__problems-text {
+   color: #f7f7f7;
+   line-height: 37px;
+   font-weight: 600;
+}
+
+.main-screen__problems {
+   margin-left: 10%;
+}
+
+.main-screen__problems-item {
+   position: relative;
+   margin-bottom: 10px;
+}
+
+.main-screen__problems-item:last-child {
+   padding-bottom: 30px;
+}
+
+.main-screen__problems-text::before {
+   position: absolute;
+   content: "";
+   width: 40px;
+   height: 40px;
+   color: $green;
+   border-radius: 2px;
+   z-index: 10;
+   top: 0;
+   left: 0;
+}

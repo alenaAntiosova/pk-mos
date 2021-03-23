@@ -1,0 +1,39 @@
+@media (min-width: $desktop-width) {
+   .article-block {
+      margin-bottom: 40px;
+   }
+
+   .article-block__inner {
+      padding: 0 50px;
+   }
+
+   .article-block__text {
+      text-align: justify;
+      line-height: 27px;
+      margin-bottom: 30px;
+   }
+
+   .article-block__header {
+      text-align: center;
+      color: $green;
+      line-height: 37px;
+      margin-bottom: 30px;
+   }
+
+   .article-block__list-header {
+      font-size: 25px;
+      line-height: 37px;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 40px;
+   }
+
+   .article-block__item-text {
+      line-height: 37px;
+      font-size: 18px;
+   }
+
+   .article-block__item {
+      margin-left: 50px;
+   }
+}

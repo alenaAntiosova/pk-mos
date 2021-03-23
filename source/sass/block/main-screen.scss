@@ -1,0 +1,100 @@
+.main-screen__inner {
+   background-color: $dark;
+   margin: 0 auto;
+   margin-bottom: 40px;
+}
+
+.main-screen__header-wrapper {
+   color: #333;
+}
+
+.main-screen__header {
+   margin: 0;
+   padding: 0;
+   color: #79b433;
+   font-size: 40px;
+   text-align: center;
+   padding: 30px 10px;
+   font-weight: 600;
+}
+.main-screen__text {
+   display: none;
+}
+
+.main-screen__tel-button {
+   margin: 40px auto;
+}
+
+.main-screen__text-header {
+   margin: 0;
+   padding: 0;
+   font-size: 45px;
+   font-weight: 700;
+   color: #fff;
+   text-align: center;
+}
+
+.main-screen__text-header span {
+   text-transform: uppercase;
+   font-size: 14px;
+}
+
+.main-screen__text-block {
+   margin-bottom: 70px;
+}
+
+.main-screen__contacts {
+   margin-bottom: 50px;
+}
+
+@media (min-width: $desktop-width) {
+   .main-screen__promo {
+      display: flex;
+   }
+
+   .main-screen__wrapper {
+      padding-left: 50px;
+      padding-right: 50px;
+   }
+
+   .main-screen__header {
+      font-size: 35px;
+      padding-top: 50px;
+   }
+
+   .main-screen__header-wrapper {
+      margin-bottom: 30px;
+   }
+
+   .main-screen__tel-button {
+      margin-top: 20px;
+   }
+
+   .main-screen__text {
+      display: inline-block;
+      color: $white;
+      line-height: 23px;
+      text-align: justify;
+   }
+
+   .main-screen__text-block {
+      display: flex;
+      padding: 0 20px;
+   }
+
+   .main-screen__text-header {
+      width: 50%;
+      margin-right: 40px;
+      text-align: left;
+      font-size: 30px;
+   }
+
+   .main-screen__text {
+      width: 50%;
+      font-size: 16px;
+   }
+
+   .main-screen__problems-list {
+      margin-left: 250px;
+   }
+}

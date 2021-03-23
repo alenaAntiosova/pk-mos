@@ -1,0 +1,43 @@
+.main-nav__toggle {
+   display: none;
+}
+
+.main-nav {
+   display: none;
+}
+
+@media (min-width: $desktop-width) {
+   .main-nav {
+      display: block;
+      width: 100%;
+      margin-left: 90px;
+   }
+
+   .main-nav__list {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .main-nav__toggle {
+      display: block;
+   }
+
+   .main-nav__link {
+      font-size: 14px;
+      color: $white;
+      text-transform: uppercase;
+      font-weight: 600;
+
+      &:hover {
+         color: $green;
+      }
+
+      &:active {
+         color: $green;
+      }
+   }
+
+   .main-nav__toggle {
+      display: none;
+   }
+}
