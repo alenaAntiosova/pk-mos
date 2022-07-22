@@ -1,0 +1,45 @@
+.video {
+   margin-bottom: 50px;
+}
+
+.video__text strong {
+   display: block;
+   font-size: 20px;
+   color: #79b433;
+   line-height: 25px;
+   text-align: center;
+   margin-right: 10px;
+}
+
+.video__text {
+   text-align: center;
+   margin-bottom: 20px;
+   margin-right: 10px;
+}
+
+.video__block {
+   display: block;
+   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+   .video__wrapper {
+      display: flex;
+      flex-direction: row;
+      padding-right: 40px;
+      padding-left: 40px;
+   }
+
+   .video__block {
+      width: 500px;
+      height: auto;
+   }
+
+   .video__text {
+      text-align: left;
+   }
+
+   .video__text strong {
+      text-align: left;
+   }
+}

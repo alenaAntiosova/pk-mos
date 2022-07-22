@@ -1,3 +1,7 @@
+.work-stage {
+   margin-bottom: 30px;
+}
+
 .work-stage__inner {
    border-top: 2px solid $green;
    border-bottom: 2px solid $green;
@@ -14,6 +18,12 @@
    margin-bottom: 30px;
 }
 
+.work-stage__list {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
 .work-stage__text {
    display: block;
    color: $green;
@@ -26,13 +36,58 @@
 }
 
 .work-stage__item:not(:last-child) {
+   position: relative;
    margin-bottom: 80px;
+}
+
+.work-stage__item--arrow::before {
+   position: absolute;
+   content: "";
+   width: 40px;
+   height: 40px;
+   background-image: url("../img/icon-right-arrow-verylong.svg");
+   top: 70px;
+   right: 50%;
+   background-repeat: no-repeat;
+   transform: rotate(90deg);
+   margin: auto;
+   opacity: 0.5;
+}
+
+@media (min-width: $tablet-width) {
+   .work-stage__list {
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      margin-right: 20px;
+      justify-content: space-around;
+   }
+
+   .work-stage__item {
+      position: relative;
+      margin-bottom: 80px;
+   }
+
+   .work-stage__item:not(:last-child) {
+      margin-right: 140px;
+   }
+
+   .work-stage__item--arrow::before {
+      transform: rotate(0deg);
+      top: 6px;
+      left: 210px;
+      width: 50px;
+      height: 50px;
+   }
+
+   .work-stage__text {
+      font-size: 18px;
+   }
 }
 
 @media (min-width: $desktop-width) {
    .work-stage__inner {
       padding: 30px 50px 0;
-      margin-bottom: 40px;
    }
 
    .work-stage__list {
@@ -44,7 +99,12 @@
    }
 
    .work-stage__text {
-      text-transform: none;
       text-align: left;
+   }
+
+   .work-stage__item--arrow::before {
+      width: 60px;
+      height: 60px;
+      left: 250px;
    }
 }

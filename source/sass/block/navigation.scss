@@ -2,34 +2,41 @@
    display: none;
 }
 
-/*.navigation__bottom {
-   display: flex;
-   flex-direction: column;
-}*/
+.navigation__bottom {
+   display: none;
+}
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
+   .navigation__wrapper {
+      display: flex;
+      flex-direction: column;
+   }
+
    .navigation__top {
       display: flex;
       border-bottom: 1px solid $grey;
       justify-content: space-between;
    }
 
-   .navigation {
-      width: 980px;
-      padding-top: 40px;
-   }
-
-   .navigation__wrapper {
-      display: flex;
-      flex-direction: column;
-   }
-
    .navigation__bottom {
-      display: flex;
+      display: block;
       padding-top: 20px;
+      margin-left: 45px;
    }
 
    .navigation__tel-button {
+      position: relative;
       color: $white;
+
+      &::before {
+         position: absolute;
+         content: "";
+         background-image: url("../img/tel.svg");
+         background-repeat: no-repeat;
+         width: 30px;
+         height: 30px;
+         bottom: 5px;
+         left: -40px;
+      }
    }
 }

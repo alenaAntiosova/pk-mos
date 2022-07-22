@@ -1,7 +1,7 @@
 .page-footer {
    width: 100%;
    background-color: $dark;
-   min-height: 250px;
+   min-height: 500px;
    color: $white;
 }
 
@@ -17,32 +17,88 @@
 }
 
 .page-footer__address {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    margin-bottom: 70px;
    line-height: 20px;
+   padding-top: 20px;
+
+   &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/location.svg");
+      width: 50px;
+      height: 50px;
+      top: -50px;
+      border: 2px solid $green;
+      border-radius: 50%;
+   }
 }
 
 .page-footer__email {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    margin-bottom: 70px;
+   padding-top: 20px;
+
+   &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/Email.svg");
+      background-size: cover;
+      width: 50px;
+      height: 50px;
+      top: -50px;
+      border: 2px solid $green;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-position: center center;
+   }
 }
 
 .page-footer__tel {
-   margin-bottom: 20px;
+   display: flex;
+   position: relative;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 50px;
+   padding-top: 20px;
+
+   &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/tel.svg");
+      width: 50px;
+      height: 50px;
+      top: -50px;
+      border: 2px solid $green;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-position: center center;
+   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
    .page-footer {
       min-height: 100px;
    }
 
    .page-footer__inner {
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
-      padding-top: 40px;
+      padding-top: 60px;
    }
 
    .page-footer__header {
+      font-size: 20px;
       text-align: left;
       margin-bottom: 0px;
+      padding-top: 20px;
    }
 
    .page-footer__email {
@@ -56,7 +112,12 @@
 
    .page-footer__tel {
       font-weight: 600;
-      font-size: 25px;
+      font-size: 20px;
       margin-bottom: 0px;
+      padding-top: 22px;
+   }
+
+   .page-footer__address {
+      margin-bottom: 40px;
    }
 }

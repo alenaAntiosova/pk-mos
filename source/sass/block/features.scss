@@ -1,3 +1,7 @@
+.features__list {
+   margin-bottom: 40px;
+}
+
 .features__header {
    font-size: 25px;
    color: $green;
@@ -9,12 +13,13 @@
 .features__text {
    line-height: 27px;
    text-align: justify;
+   margin-bottom: 20px;
 }
 
 @media (min-width: $desktop-width) {
    .features__wrapper {
-      padding-left: 50px;
-      padding-right: 50px;
+      padding-left: 40px;
+      padding-right: 40px;
    }
 
    .features__header {

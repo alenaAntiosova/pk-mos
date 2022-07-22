@@ -2,9 +2,15 @@
    padding: 0 20px;
 }
 
+@media (min-width: $tablet-width) {
+   .container {
+      padding: 0 40px;
+   }
+}
+
 @media (min-width: $desktop-width) {
    .container {
-      max-width: 1320px;
-      padding: 0 70px;
+      max-width: 1200px;
+      margin: 0 auto;
    }
 }

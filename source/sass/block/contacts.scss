@@ -46,6 +46,39 @@
    margin: 0 auto;
 }
 
+@media (min-width: $tablet-width) {
+   .contacts {
+      padding-left: 20px;
+   }
+   .contacts__text {
+      font-size: 30px;
+      text-align: left;
+      margin-bottom: 20px;
+   }
+
+   .contacts__tel {
+      text-align: left;
+   }
+
+   .contacts__header {
+      margin-bottom: 30px;
+      text-align: left;
+   }
+
+   .contacts__tel-button {
+      margin: 0;
+      margin-top: 20px;
+   }
+
+   .contacts__img {
+      position: relative;
+      top: -230px;
+      left: 90px;
+      width: 411px;
+      height: 411px;
+   }
+}
+
 @media (min-width: $desktop-width) {
    .contacts__text {
       font-size: 30px;
@@ -70,8 +103,8 @@
    .contacts__img {
       position: relative;
       bottom: 35%;
-      left: 250px;
-      width: 300px;
-      height: 300px;
+      left: 230px;
+      width: 400px;
+      height: 400px;
    }
 }

@@ -1,3 +1,57 @@
+.article-block__header {
+   margin-bottom: 10px;
+}
+
+.article-block__text {
+   margin-bottom: 20px;
+   line-height: 22px;
+}
+
+.article-block__list-header {
+   margin-bottom: 20px;
+}
+
+.article-block__item-text {
+   display: block;
+}
+
+.article-block__list {
+   display: flex;
+   flex-direction: column;
+}
+
+.article-block__item {
+   position: relative;
+   padding-left: 30px;
+   margin-bottom: 20px;
+   align-items: top;
+
+   &::before {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 30px;
+      background-color: $green;
+      border-radius: 3px;
+      top: 3px;
+      left: -10px;
+   }
+}
+
+.article-block__item--tick::before {
+   position: absolute;
+   content: "";
+   width: 30px;
+   height: 30px;
+   background-image: url("../img/icon-tick.svg");
+   z-index: 10;
+   top: 5px;
+   left: -10px;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 20px;
+}
+
 @media (min-width: $desktop-width) {
    .article-block {
       margin-bottom: 40px;

@@ -1,7 +1,6 @@
 .main-screen__inner {
    background-color: $dark;
-   margin: 0 auto;
-   margin-bottom: 40px;
+   margin: 0 5px 40px;
 }
 
 .main-screen__header-wrapper {
@@ -40,7 +39,7 @@
 }
 
 .main-screen__text-block {
-   margin-bottom: 70px;
+   margin-bottom: 20px;
 }
 
 .main-screen__contacts {
@@ -48,13 +47,18 @@
 }
 
 @media (min-width: $desktop-width) {
+   .main-screen__inner {
+      margin-left: 70px;
+      margin-right: 70px;
+   }
+
    .main-screen__promo {
       display: flex;
    }
 
    .main-screen__wrapper {
-      padding-left: 50px;
-      padding-right: 50px;
+      padding-left: 40px;
+      padding-right: 40px;
    }
 
    .main-screen__header {
